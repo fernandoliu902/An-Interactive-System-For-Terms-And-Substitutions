@@ -3,12 +3,6 @@ Master Final Project
 
 # An Interactive System For Terms And Substitutions #
 
-::: hljs-center
-
-
-(Master’s Project) 
-
-:::
 
 ### Fengzhang Liu
 
@@ -182,7 +176,7 @@ ant Property.Frontiers of Combining Systems. Lecture Notes in Computer Science. 
 
 
 ## A Substitution
-
+```
 % theta1 = {X:= f(a,b)}
 % t = f(a,g(X))
 % apply (theta1, t)
@@ -206,9 +200,9 @@ f(g(a, f(b, a)), f(g(a, f(b, a)), f(g(a), a)))
 f(h(X), h(X))
 % apply(theta6, t5)
 f(h(a), h(a))
-
+```
 ## B Composition
-
+```
 % theta1 = {X:= f(Y, Y)}
 % theta2 = {Y:= g(a)}
 % compose(theta1, theta2)
@@ -230,9 +224,9 @@ f(h(a), h(a))
 % theta5 = {X:= Y, Y:= X}
 % compose(theta5, theta5)
 {}
-
+```
 ## C Unification
-
+```
 % s1 = h(f(X), Y)
 % t1 = h(Y, f(Z))
 % unify(s1, t1)
@@ -265,5 +259,5 @@ Function Clash
 % t8 = f(c, f(g(X), X))
 % unify(s8, t8)
 Occur-Check
-
+```
 
